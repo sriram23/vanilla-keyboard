@@ -1,0 +1,21 @@
+.qwerty {
+    display: flex;
+}
+#tab {
+    width: 6rem;
+}
+#backSlash {
+    width: 6rem;
+}
+#capsLock {
+    width: 8rem;
+}
+#enter {
+    width: 9rem;
+}
+#shiftLeft, #shiftRight {
+    width: 11rem;
+}
+#space {
+    width: 43rem;
+}

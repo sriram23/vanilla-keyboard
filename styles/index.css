@@ -1,0 +1,38 @@
+@import './functional.css';
+@import './number.css';
+@import 'qwerty.css';
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    margin: unset;
+    padding: unset;
+}
+.basic-key {
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.functional-key {
+    height: 2rem;
+    width: 4rem;
+    margin:0.5rem;
+    line-height: 2rem;
+}
+.num-key, .querty-keys {
+    height: 4rem;
+    width: 4rem;
+    margin:0.5rem;
+    line-height: 4rem;
+}
+
+.num-key-multi, .querty-keys-multi {
+    height: 4rem;
+    width: 4rem;
+    margin:0.5rem;
+    line-height: 2rem;
+}
