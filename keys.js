@@ -16,10 +16,10 @@ export const KEYS = {
     pageDown: {key:12, value:"Page Down", value2: ""},
     end: {key: 0, value: "End", value2: ""},
     home: {key: 0, value: "Home", value2: ""},
-    leftArrow: {key: 0, value: "", value2: ""},
-    upArrow: {key: 0, value: "", value2: ""},
-    rightArrow: {key: 0, value: "", value2: ""},
-    downArrow: {key: 0, value: "", value2: ""},
+    leftArrow: {key: 0, value: "\u2190", value2: ""},
+    upArrow: {key: 0, value: "\u2191", value2: ""},
+    rightArrow: {key: 0, value: "\u2192", value2: ""},
+    downArrow: {key: 0, value: "\u2193", value2: ""},
     printScreen: {key: 0, value: "Print Screen", value2: ""},
     insert: {key: 0, value: "Insert", value2: ""},
     delete: {key: 0, value: "Delete", value2: ""},
@@ -109,3 +109,5 @@ export const TAB_ROW = ["tab", "q", "w", "e", "r", "t", "y", "u", "i", "o", "p",
 export const CAPS_ROW = ["capsLock", "a", "s", "d", "f", "g", "h", "j", "k", "l", "semicolon", "singleQuote", "enter"]
 export const SHIFT_ROW = ["shiftLeft","z","x","c","v","b","n","m","comma","period","forwardSlash","shiftRight"]
 export const CTRL_ROW = ["ctrlLeft","cmdLeft","altLeft","space","altRight","cmdRight","ctrlRight"]
+export const ARROWS_1 = ["upArrow"]
+export const ARROWS_2 = ["leftArrow","downArrow","rightArrow"]

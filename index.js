@@ -1,4 +1,4 @@
-import { CAPS_ROW, FUNCTIONS, KEYS, NUM, SHIFT_ROW, TAB_ROW, CTRL_ROW } from "./keys.js";
+import { CAPS_ROW, FUNCTIONS, KEYS, NUM, SHIFT_ROW, TAB_ROW, CTRL_ROW, ARROWS_1, ARROWS_2 } from "./keys.js";
 
 function onDivClick(key) {
   console.log("Div clicked!", key.key);
@@ -69,3 +69,5 @@ renderKeys(TAB_ROW, "qwerty-1", ["querty-keys", "querty-keys-multi"]);
 renderKeys(CAPS_ROW, "qwerty-2", ["querty-keys", "querty-keys-multi"]);
 renderKeys(SHIFT_ROW, "qwerty-3", ["querty-keys", "querty-keys-multi"]);
 renderKeys(CTRL_ROW, "qwerty-4", ["querty-keys", "querty-keys-multi"]);
+renderKeys(ARROWS_1, "arrow-row1", ["querty-keys", "querty-keys-multi"]);
+renderKeys(ARROWS_2, "arrow-row2", ["querty-keys", "querty-keys-multi"]);

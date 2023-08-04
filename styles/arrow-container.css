@@ -1,0 +1,9 @@
+.arrow-container {
+    max-width: 20rem;
+    display: flex;
+    flex-direction: column;
+}
+.arrow-row1, .arrow-row2 {
+    display: flex;
+    justify-content: center;
+}
