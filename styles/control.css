@@ -1,0 +1,8 @@
+.control-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.control {
+    display: flex;
+}

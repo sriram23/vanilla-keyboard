@@ -2,15 +2,34 @@
 @import './number.css';
 @import 'qwerty.css';
 @import 'arrow-container.css';
+@import 'control.css';
+@import 'numpad.css';
 body {
-    background-color: black;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: end;
     height: 90vh;
-    margin: unset;
     padding: unset;
+}
+
+.keyboard-container {
+    background-color: black;
+    display: flex;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.control-section {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.num-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .basic-key {
@@ -41,6 +60,14 @@ body {
 }
 
 .num-key-multi, .querty-keys-multi {
+    height: 4rem;
+    width: 4rem;
+    margin:0.5rem;
+    line-height: 2rem;
+}
+
+
+.control-keys {
     height: 4rem;
     width: 4rem;
     margin:0.5rem;

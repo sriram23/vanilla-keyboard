@@ -1,3 +1,6 @@
 .functional {
     display: flex;
 }
+#esc, #f4, #f8 {
+    margin-right: 3.5rem;
+}

@@ -1,4 +1,22 @@
-import { CAPS_ROW, FUNCTIONS, KEYS, NUM, SHIFT_ROW, TAB_ROW, CTRL_ROW, ARROWS_1, ARROWS_2 } from "./keys.js";
+import {
+  CAPS_ROW,
+  FUNCTIONS,
+  KEYS,
+  NUM,
+  SHIFT_ROW,
+  TAB_ROW,
+  CTRL_ROW,
+  ARROWS_1,
+  ARROWS_2,
+  INSERT_ROW,
+  PRINT_ROW,
+  DELETE_ROW,
+  NUM_LOCK_ROW,
+  NUM_ROW_1,
+  NUM_ROW_2,
+  NUM_ROW_3,
+  NUM_ROW_4,
+} from "./keys.js";
 
 function onDivClick(key) {
   console.log("Div clicked!", key.key);
@@ -71,3 +89,11 @@ renderKeys(SHIFT_ROW, "qwerty-3", ["querty-keys", "querty-keys-multi"]);
 renderKeys(CTRL_ROW, "qwerty-4", ["querty-keys", "querty-keys-multi"]);
 renderKeys(ARROWS_1, "arrow-row1", ["querty-keys", "querty-keys-multi"]);
 renderKeys(ARROWS_2, "arrow-row2", ["querty-keys", "querty-keys-multi"]);
+renderKeys(PRINT_ROW, "control1", ["control-keys", "querty-keys-multi"]);
+renderKeys(INSERT_ROW, "control2", ["control-keys", "querty-keys-multi"]);
+renderKeys(DELETE_ROW, "control3", ["control-keys", "querty-keys-multi"]);
+renderKeys(NUM_LOCK_ROW, "numpad1", ["querty-keys", "querty-keys-multi"]);
+renderKeys(NUM_ROW_1, "numpad2", ["querty-keys", "querty-keys-multi"]);
+renderKeys(NUM_ROW_2, "numpad3", ["querty-keys", "querty-keys-multi"]);
+renderKeys(NUM_ROW_3, "numpad4", ["querty-keys", "querty-keys-multi"]);
+renderKeys(NUM_ROW_4, "numpad5", ["querty-keys", "querty-keys-multi"]);

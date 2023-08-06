@@ -62,21 +62,22 @@ export const KEYS = {
     cmdLeft: {key: 0, value:"cmd", value2: ""},
     cmdRight: {key: 0, value:"cmd", value2: ""},
     select: {key: 0, value:"select", value2: ""},
-    numZero:{key: 0, value:"0", value2: "Insert"},
-    numOne:{key: 0, value:"1", value2: "End"},
-    numTwo:{key: 0, value:"2", value2: "Down Arrow"},
-    numThree:{key: 0, value:"3", value2: "PgDn"},
-    numFour:{key: 0, value:"4", value2: "Left Arrow"},
+    numZero:{key: 0, value:"0", value2: ""},
+    numOne:{key: 0, value:"1", value2: ""},
+    numTwo:{key: 0, value:"2", value2: ""},
+    numThree:{key: 0, value:"3", value2: ""},
+    numFour:{key: 0, value:"4", value2: ""},
     numFive:{key: 0, value:"5", value2: ""},
-    numSix:{key: 0, value:"6", value2: "Right Arrow"},
-    numSeven:{key: 0, value:"7", value2: "Home"},
-    numEight:{key: 0, value:"8", value2: "Up Arrow"},
-    numNine:{key: 0, value:"9", value2: "PgUp"},
+    numSix:{key: 0, value:"6", value2: ""},
+    numSeven:{key: 0, value:"7", value2: ""},
+    numEight:{key: 0, value:"8", value2: ""},
+    numNine:{key: 0, value:"9", value2: ""},
     multiply:{key: 0, value:"*", value2: ""},
     add:{key: 0, value:"+", value2: ""},
     subtract:{key: 0, value:"-", value2: ""},
     dot:{key: 0, value:".", value2: ""},
     divide:{key: 0, value:"/", value2: ""},
+    numEnter:{key: 0, value:"Enter", value2: ""},
     f1:{key: 112, value:"F1", value2: ""},
     f2:{key: 113, value:"F2", value2: ""},
     f3:{key: 114, value:"F3", value2: ""},
@@ -111,3 +112,11 @@ export const SHIFT_ROW = ["shiftLeft","z","x","c","v","b","n","m","comma","perio
 export const CTRL_ROW = ["ctrlLeft","cmdLeft","altLeft","space","altRight","cmdRight","ctrlRight"]
 export const ARROWS_1 = ["upArrow"]
 export const ARROWS_2 = ["leftArrow","downArrow","rightArrow"]
+export const PRINT_ROW = ["printScreen", "scrollLock", "pauseBreak"]
+export const INSERT_ROW = ["insert", "home", "pageUp"]
+export const DELETE_ROW = ["delete", "end", "pageDown"]
+export const NUM_LOCK_ROW = ["numLock", "divide", "multiply", "subtract"]
+export const NUM_ROW_1 = ["numSeven","numEight","numNine","add"]
+export const NUM_ROW_2 = ["numFour","numFive","numSix"]
+export const NUM_ROW_3 = ["numOne","numTwo","numThree", "numEnter"]
+export const NUM_ROW_4 = ["numZero","dot"]

@@ -1,0 +1,23 @@
+.num-section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.numpad {
+    display: flex;
+}
+#add, #numEnter {
+    position: absolute;
+    height: 9.25rem;
+    right: 0;
+}
+#numZero {
+    width: 9.25rem;
+}
+
+#numLock {
+    height: 4rem;
+    width: 4rem;
+    margin:0.5rem;
+    line-height: 2rem;
+}
