@@ -28,7 +28,22 @@ function onDivClick(key) {
     (key.key >= 186 && key.key <= 192) ||
     (key.key >= 219 && key.key <= 222)
   ) {
-    document.getElementById("text-area").value += key.value;
+    // Check if it is alphabet or not
+    // If capsLock off, then the length will be 1 else, it would be 2
+    if(document.getElementById("caps-indicator").classList.length == 1) {
+      // If alphabets, make it lowercase else same value
+      if(key.key >= 65 && key.key <= 90) {
+        document.getElementById("text-area").value += key.value.toLowerCase();  
+      } else{
+        document.getElementById("text-area").value += key.value;
+      }
+    } else {
+        // If  value2 then value2 else same value
+        document.getElementById("text-area").value += key.value2 ? key.value2 : key.value;
+    }
+  } else if (key.key === 20 || key.key === 16){
+    // If shift or capsLock presses, need to toggle class
+    document.getElementById("caps-indicator").classList.toggle('caps-indicator-on')
   } else {
     // To restart the transition timer
     clearInterval(interval);
