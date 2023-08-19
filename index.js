@@ -18,15 +18,11 @@ import {
   NUM_ROW_4,
 } from "./keys.js";
 
+
+const inputField = document.getElementById('text-area');
+
 function onDivClick(key) {
-  console.log("Div clicked!", key.key);
-  if (key.key) {
-    const keyEvt = new KeyboardEvent("keydown", {
-      which: key.key,
-      keyCode: key.key,
-    });
-    document.dispatchEvent(keyEvt);
-  }
+  document.getElementById('text-area').value += key.value;
 }
 
 document.addEventListener("keydown", (event) => {

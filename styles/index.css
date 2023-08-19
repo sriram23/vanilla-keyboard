@@ -6,10 +6,17 @@
 @import 'numpad.css';
 body {
     display: flex;
-    justify-content: center;
-    align-items: end;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     height: 90vh;
     padding: unset;
+}
+#text-area {
+    width: 80%;
+    height: 100%;
+    font-size: 2rem;
+    margin: 2rem;;
 }
 
 .keyboard-container {
