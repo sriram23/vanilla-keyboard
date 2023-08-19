@@ -11,6 +11,24 @@ body {
     align-items: center;
     height: 90vh;
     padding: unset;
+    margin: unset;
+}
+#error {
+    background: red;
+    color: white;
+    opacity: 0;
+    width: 100%;
+    padding: 1rem 1rem 0 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+#indicator {
+    height: 0.25rem;
+    margin-top: 0.5rem;
+    background: white;
+    border: 1px solid red;
+    width: 100%;
+    transition: width 0.1s ease;
 }
 #text-area {
     width: 80%;
@@ -24,6 +42,7 @@ body {
     display: flex;
     padding: 2rem;
     border-radius: 1rem;
+    margin: 1rem;
 }
 
 .control-section {

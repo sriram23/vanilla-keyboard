@@ -17,12 +17,38 @@ import {
   NUM_ROW_3,
   NUM_ROW_4,
 } from "./keys.js";
-
-
-const inputField = document.getElementById('text-area');
-
+let interval;
+let timeout;
 function onDivClick(key) {
-  document.getElementById('text-area').value += key.value;
+  // Only characters are to be printed and rest of functional keys are to be ignored.
+  if (
+    (key.key >= 48 && key.key <= 57) ||
+    (key.key >= 65 && key.key <= 90) ||
+    (key.key >= 96 && key.key <= 111) ||
+    (key.key >= 186 && key.key <= 192) ||
+    (key.key >= 219 && key.key <= 222)
+  ) {
+    document.getElementById("text-area").value += key.value;
+  } else {
+    // To restart the transition timer
+    clearInterval(interval);
+    clearTimeout(timeout);
+    // Show the message that it's experimental and not every key in the keyboard will work.
+    let width = 100;
+    document.getElementById("error").style.opacity = 1;
+    // Toast indicator
+    interval = setInterval(() => {
+      if (width >= 0) {
+        document.getElementById("indicator").style.width = `${width}%`;
+        width--;
+      }
+    }, 29);
+    // After 3seconds timeout, the toast will disappear.
+    timeout = setTimeout(() => {
+      document.getElementById("error").style.opacity = 0;
+      document.getElementById("indicator").style.width = "100%";
+    }, 3000);
+  }
 }
 
 document.addEventListener("keydown", (event) => {
